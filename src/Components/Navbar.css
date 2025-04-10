@@ -1,0 +1,11 @@
+.navbar {
+  background-color: black;
+  overflow: hidden;
+  position: fixed;
+}
+.navbar-brand {
+  color: white;
+  font-size: 30px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
