@@ -1,12 +1,20 @@
 import React from "react";
+import { goHome } from "./GlobalFunctions";
 import "../Components/Navbar.css";
+import 
+{ useNavigate } from "react-router-dom";
+
+
 function Navbar() {
+  
+
+  const navigate = useNavigate();
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Payzz
-        </a>
+      <a className="navbar-brand" href="#" onClick={(e) => goHome(navigate, e)}>
+      Payzz
+    </a>
         <button
           className="navbar-toggler"
           type="button"

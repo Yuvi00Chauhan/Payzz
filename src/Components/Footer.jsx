@@ -1,7 +1,8 @@
 import React from "react";
+import "./Footer.css";
 function Footer() {
   return (
-    <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer">
       <p className="col-md-4 mb-0 text-body-secondary">
         &copy; {new Date().getFullYear()} Payzz.com. All rights reserved.
       </p>
