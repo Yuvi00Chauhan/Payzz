@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { useNavigate } from "react-router-dom";
+import { goAbout } from "./GlobalFunctions";
 import { goHome } from "./GlobalFunctions";
 function Footer() {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ function Footer() {
           </a>
         </li>
         <li className="nav-item footLinks">
-          <a href="#" className="nav-link px-2 text-white">
+          <a href="#" className="nav-link px-2 text-white" onClick={(e) => goAbout(navigate, e)}>
             About
           </a>
         </li>

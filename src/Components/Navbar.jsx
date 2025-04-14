@@ -1,5 +1,7 @@
 import React from "react";
 import { goHome } from "./GlobalFunctions";
+import { goAbout } from "./GlobalFunctions";
+import { goAccount } from "./GlobalFunctions";
 import "../Components/Navbar.css";
 import { useNavigate } from "react-router-dom";
 
@@ -32,7 +34,7 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item flex-fill">
-              <a className="nav-link active" href="#" >
+              <a className="nav-link active" href="#" onClick={(e) => goAbout(navigate, e)} >
                 About us
               </a>
             </li>
@@ -42,7 +44,7 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item flex-fill">
-              <a className="nav-link active" href="#" >
+              <a className="nav-link active" href="#" onClick={(e) => goAccount(navigate, e)}>
                 Account
               </a>
             </li>

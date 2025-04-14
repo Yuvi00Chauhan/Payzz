@@ -12,6 +12,8 @@ import BroadbandRecharge from "./Components/BroadbandRecharge";
 import ElectricityBill from "./Components/ElectricityBill";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import GasBill from "./Components/GasBill";
+import About from "./Components/About";
+import Account from "./Components/Account";
 
 function App() {
   return (
@@ -39,9 +41,11 @@ function MainContent() {
           <Route path="/internet-recharge" element={<BroadbandRecharge />} />
           <Route path="/electricity-bill-pay" element={<ElectricityBill />} />
           <Route path="/gas-bill-pay" element={<GasBill />} />
-          {/* <Route path="/account" element={<Account />} />
-          <Route path="/contact" element={<ContactUs />} /
           <Route path="/about" element={<About />} />
+          <Route path="/account" element={<Account />} />
+        
+        
+          {/* <Route path="/contact" element={<ContactUs />} />
           <Route path="/features" element={<FeaturePage />} />
           <Route path="/faqs" element={<FAQsPage />} /> */}
         </Routes>

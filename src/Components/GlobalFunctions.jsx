@@ -34,3 +34,11 @@ export function goGasRecharge(navigate, e) {
         e.preventDefault();
         navigate("/gas-bill-pay");
       }
+
+      export function goAbout(navigate, e) {
+        navigate("/about");
+      }
+
+      export function goAccount(navigate, e) {
+        navigate("/account");
+      }
