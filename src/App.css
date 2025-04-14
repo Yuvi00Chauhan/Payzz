@@ -2,11 +2,7 @@
   text-align: center;
   
 }
-body{
-  /* background-image: url("Images/bg.jpg");
-  background-repeat: no-repeat;
-  object-fit: fill  ; */
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -48,5 +44,5 @@ body{
 }
 
 main {
-  flex: 1; /* Ensures content area grows and pushes footer down */
+  flex: 1;
 }
