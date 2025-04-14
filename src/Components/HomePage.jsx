@@ -1,6 +1,15 @@
 import React from "react";
 import "../Components/HomePage.css";
+import { goMobileRecharge } from "./GlobalFunctions";
+import { goDTHRecharge } from "./GlobalFunctions";
+import { goFastTag } from "./GlobalFunctions";
+import { goBroadbandRecharge } from "./GlobalFunctions";
+import { goElectricityRecharge } from "./GlobalFunctions";
+import { goGasRecharge } from "./GlobalFunctions";
+
+import { useNavigate } from "react-router-dom";
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <div className="container-fluid">
       <div className="text-center-section">
@@ -25,7 +34,7 @@ function HomePage() {
                   <br />⚡ Fast, secure, and hassle-free top-ups for all
                   networks.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <a href="#" className="btn btn-primary" onClick={(e) => goMobileRecharge(navigate, e)}>
                   Continue
                 </a>
               </div>
@@ -41,7 +50,7 @@ function HomePage() {
                   <br />
                   🎯 All popular DTH providers supported with secure payments.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <a href="#" className="btn btn-primary" onClick={(e) => goDTHRecharge(navigate, e)}>
                 Continue
                 </a>
               </div>
@@ -57,7 +66,7 @@ function HomePage() {
                   <br />⚡ Never miss a due date—instant payments for all major
                   ISPs.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <a href="#" className="btn btn-primary" onClick={(e) => goBroadbandRecharge(navigate, e)}>
                 Continue
                 </a>
               </div>
@@ -73,7 +82,7 @@ function HomePage() {
                   <br />
                   🛣️ Smooth travel starts with quick, hassle-free top-ups.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <a href="#" className="btn btn-primary" onClick={(e) => goFastTag(navigate, e)}>
                 Continue
                 </a>
               </div>
@@ -89,7 +98,7 @@ function HomePage() {
                   <br />⚡ Instant confirmations and support for all electricity
                   boards.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <a href="#" className="btn btn-primary" onClick={(e) => goElectricityRecharge(navigate, e)}>
                 Continue
                 </a>
               </div>
@@ -106,7 +115,7 @@ function HomePage() {
                   📲 Quick, easy, and reliable service for all major gas
                   providers.
                 </p>
-                <a href="#" className="btn btn-primary">
+                <a href="#" className="btn btn-primary"  onClick={(e) => goGasRecharge(navigate, e)}>
                 Continue
                 </a>
               </div>

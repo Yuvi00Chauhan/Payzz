@@ -8,12 +8,16 @@ import Footer from "./Components/Footer";
 import MobileRecharge from "./Components/MobileRecharge";
 import DTHrecharge from "./Components/DTHrecharge";
 import FastTag from "./Components/FastTag";
+import BroadbandRecharge from "./Components/BroadbandRecharge";
+import ElectricityBill from "./Components/ElectricityBill";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import GasBill from "./Components/GasBill";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      
         <MainContent />
       </BrowserRouter>
     </>
@@ -32,9 +36,11 @@ function MainContent() {
           <Route path="/mobo-recharge" element={<MobileRecharge />} />
           <Route path="/dth-recharge" element={<DTHrecharge />} />
           <Route path="/fast-recharge" element={<FastTag />} />
+          <Route path="/internet-recharge" element={<BroadbandRecharge />} />
+          <Route path="/electricity-bill-pay" element={<ElectricityBill />} />
+          <Route path="/gas-bill-pay" element={<GasBill />} />
           {/* <Route path="/account" element={<Account />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/contact" element={<ContactUs />} /
           <Route path="/about" element={<About />} />
           <Route path="/features" element={<FeaturePage />} />
           <Route path="/faqs" element={<FAQsPage />} /> */}

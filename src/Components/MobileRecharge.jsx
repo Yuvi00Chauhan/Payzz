@@ -1,10 +1,17 @@
 import React from "react";
 import "./MobileRecharge.css";
 import { handleRecharge } from "./GlobalFunctions";
+
 function MobileRecharge() {
+ 
   return (
-    <div className="container mt-5 mobile">
-      <h2 className="text-center PageHeading">Mobile Recharge</h2>
+    <div className="container mt-5 FastTag" >
+      <div className="row" >
+        <div className="col-md-12" >
+          <div className="col-md-6 offset-md-3">
+          </div>
+        </div>
+      </div>      <h2 className="text-center PageHeading">Mobile Recharge</h2>
       <div className="row">
         <div className="col-md-6 offset-md-3">
           <form onSubmit={handleRecharge}>
@@ -90,7 +97,7 @@ function MobileRecharge() {
                 required
               />
             </div>
-            <button type="submit" className="btn btn-primary w-100">
+            <button type="submit" className="btn btn-primary w-100" >
               Recharge Now
             </button>
           </form>

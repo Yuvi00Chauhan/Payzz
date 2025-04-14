@@ -2,10 +2,13 @@
   background-color: black;
   overflow: hidden;
   position: fixed;
+  justify-content: space-between;
 }
 .navbar-brand {
-  color: white;
   font-size: 30px;
   padding: 14px 16px;
   text-decoration: none;
+}
+.nav-item{
+  gap: 100px;
 }

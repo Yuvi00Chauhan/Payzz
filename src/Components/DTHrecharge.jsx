@@ -3,8 +3,10 @@ import "./DTHrecharge.css";
 import { handleRecharge } from "./GlobalFunctions";
 function DTHrecharge()   {
     return(
-     <div className="container mt-5 Dth" >
+      <div className="container mt-5 FastTag" >
         <div className="row" >
+            <div className="col-md-12" >
+            <div className="col-md-6 offset-md-3">
         <h2 className="text-center PageHeading">DTH Recharge</h2>
         <form onSubmit={handleRecharge}>
             <div className="mb-3">
@@ -49,6 +51,8 @@ function DTHrecharge()   {
               Recharge Now
             </button>
           </form>
+        </div>
+        </div>
         </div>
         </div>
 
