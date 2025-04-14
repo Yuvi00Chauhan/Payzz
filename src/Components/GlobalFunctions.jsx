@@ -42,3 +42,12 @@ export function goGasRecharge(navigate, e) {
       export function goAccount(navigate, e) {
         navigate("/account");
       }
+      export function goContact(navigate, e) {
+        navigate("/contact");
+      }
+      export function goFeatures(navigate, e) {
+        navigate("/features");
+      }
+      export function goFAQ(navigate, e) {
+        navigate("/faq");
+      }

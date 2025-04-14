@@ -14,7 +14,7 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import GasBill from "./Components/GasBill";
 import About from "./Components/About";
 import Account from "./Components/Account";
-
+import FAQ from "./Components/FAQ";
 function App() {
   return (
     <>
@@ -43,11 +43,11 @@ function MainContent() {
           <Route path="/gas-bill-pay" element={<GasBill />} />
           <Route path="/about" element={<About />} />
           <Route path="/account" element={<Account />} />
-        
+          <Route path="/faq" element={<FAQ />} />
         
           {/* <Route path="/contact" element={<ContactUs />} />
           <Route path="/features" element={<FeaturePage />} />
-          <Route path="/faqs" element={<FAQsPage />} /> */}
+           */}
         </Routes>
         <Footer />
       </div>
