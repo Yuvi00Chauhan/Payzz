@@ -8,8 +8,18 @@ html, body, #root {
     display: flex;
     flex-direction: column;
   }
-  
+  .foorBrand{
+    margin-right: 5px;
+  }
   footer {
     width: 100%;
   }
-  
+  @media screen and (max-width: 768px) {
+    .footLinks{
+        display: none;
+    }
+    .foorBrand{
+      text-wrap: nowrap;
+    }
+    
+  }
