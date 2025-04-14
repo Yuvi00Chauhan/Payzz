@@ -3,6 +3,7 @@ import { goHome } from "./GlobalFunctions";
 import { goAbout } from "./GlobalFunctions";
 import { goAccount } from "./GlobalFunctions";
 import "../Components/Navbar.css";
+import { goContact } from "./GlobalFunctions";
 import { useNavigate } from "react-router-dom";
 
 function Navbar() {
@@ -39,7 +40,7 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item flex-fill">
-              <a className="nav-link active" href="#" >
+              <a className="nav-link active" href="#" onClick={(e) => goContact(navigate, e)}>
                 Contact us
               </a>
             </li>

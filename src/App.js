@@ -16,6 +16,7 @@ import About from "./Components/About";
 import Account from "./Components/Account";
 import FAQ from "./Components/FAQ";
 import Features from "./Components/Features";
+import Contact from "./Components/Contact";
 function App() {
   return (
     <>
@@ -46,7 +47,7 @@ function MainContent() {
           <Route path="/account" element={<Account />} />
           <Route path="/faq" element={<FAQ />} />
         
-          {/* <Route path="/contact" element={<ContactUs />} /> */}
+          <Route path="/contact" element={<Contact />} />
           <Route path="/features" element={<Features />} />
           
         </Routes>
