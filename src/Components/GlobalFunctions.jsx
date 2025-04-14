@@ -51,3 +51,4 @@ export function goGasRecharge(navigate, e) {
       export function goFAQ(navigate, e) {
         navigate("/faq");
       }
+     

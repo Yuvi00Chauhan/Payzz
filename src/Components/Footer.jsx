@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { goAbout } from "./GlobalFunctions";
 import { goHome } from "./GlobalFunctions";
 import { goFAQ } from "./GlobalFunctions";
+import { goFeatures } from "./GlobalFunctions";
 function Footer() {
   const navigate = useNavigate();
   return (
@@ -18,7 +19,7 @@ function Footer() {
           </a>
         </li>
         <li className="nav-item footLinks">
-          <a href="#" className="nav-link px-2 text-white">
+          <a href="#" className="nav-link px-2 text-white" onClick={(e) => goFeatures(navigate, e)}>
             Features
           </a>
         </li>

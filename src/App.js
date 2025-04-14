@@ -15,6 +15,7 @@ import GasBill from "./Components/GasBill";
 import About from "./Components/About";
 import Account from "./Components/Account";
 import FAQ from "./Components/FAQ";
+import Features from "./Components/Features";
 function App() {
   return (
     <>
@@ -45,9 +46,9 @@ function MainContent() {
           <Route path="/account" element={<Account />} />
           <Route path="/faq" element={<FAQ />} />
         
-          {/* <Route path="/contact" element={<ContactUs />} />
-          <Route path="/features" element={<FeaturePage />} />
-           */}
+          {/* <Route path="/contact" element={<ContactUs />} /> */}
+          <Route path="/features" element={<Features />} />
+          
         </Routes>
         <Footer />
       </div>
