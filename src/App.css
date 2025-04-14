@@ -41,3 +41,12 @@ body{
     transform: rotate(360deg);
   }
 }
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Ensures content area grows and pushes footer down */
+}

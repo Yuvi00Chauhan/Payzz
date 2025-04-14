@@ -44,7 +44,7 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item flex-fill text-center">
-              <a className="nav-link active" aria-disabled="true">
+              <a className="nav-link active">
                 Account
               </a>
             </li>
