@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#" onClick={(e) => goHome(navigate, e)}>
+        <a className="navbar-brand" href="javascript:void(0)" onClick={(e) => goHome(navigate, e)}>
           Payzz
         </a>
         <button
@@ -30,22 +30,22 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav w-100 d-flex flex-lg-row flex-column text-center">
             <li className="nav-item flex-fill">
-              <a className="nav-link active" href="#" onClick={(e) => goHome(navigate, e)}>
+              <a className="nav-link active" href="javascript:void(0)" onClick={(e) => goHome(navigate, e)}>
                 Home
               </a>
             </li>
             <li className="nav-item flex-fill">
-              <a className="nav-link active" href="#" onClick={(e) => goAbout(navigate, e)} >
+              <a className="nav-link active" href="javascript:void(0)" onClick={(e) => goAbout(navigate, e)} >
                 About us
               </a>
             </li>
             <li className="nav-item flex-fill">
-              <a className="nav-link active" href="#" onClick={(e) => goContact(navigate, e)}>
+              <a className="nav-link active" href="javascript:void(0)" onClick={(e) => goContact(navigate, e)}>
                 Contact us
               </a>
             </li>
             <li className="nav-item flex-fill">
-              <a className="nav-link active" href="#" onClick={(e) => goAccount(navigate, e)}>
+              <a className="nav-link active" href="javascript:void(0)" onClick={(e) => goAccount(navigate, e)}>
                 Account
               </a>
             </li>
