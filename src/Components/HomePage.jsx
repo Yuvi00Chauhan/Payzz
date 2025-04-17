@@ -33,7 +33,7 @@ function HomePage() {
                   📱 Instant mobile recharges at your fingertips.<br />
                   ⚡ Fast, secure, and hassle-free top-ups for all networks.
                 </p>
-                <a href="#" className="btn btn-primary" onClick={(e) => goMobileRecharge(navigate, e)}>
+                <a href="javascript:void(0)" className="btn btn-primary" onClick={(e) => goMobileRecharge(navigate, e)}>
                   Continue
                 </a>
               </div>
@@ -49,7 +49,7 @@ function HomePage() {
                   📺 Recharge your DTH instantly anytime, anywhere.<br />
                   🎯 All popular DTH providers supported with secure payments.
                 </p>
-                <a href="#" className="btn btn-primary" onClick={(e) => goDTHRecharge(navigate, e)}>
+                <a href="javascript:void(0)" className="btn btn-primary" onClick={(e) => goDTHRecharge(navigate, e)}>
                   Continue
                 </a>
               </div>
@@ -65,7 +65,7 @@ function HomePage() {
                   🌐 Pay your broadband bills quickly and securely online.<br />
                   ⚡ Never miss a due date—instant payments for all major ISPs.
                 </p>
-                <a href="#" className="btn btn-primary" onClick={(e) => goBroadbandRecharge(navigate, e)}>
+                <a href="javascript:void(0)" className="btn btn-primary" onClick={(e) => goBroadbandRecharge(navigate, e)}>
                   Continue
                 </a>
               </div>
@@ -81,7 +81,7 @@ function HomePage() {
                   🚗 Recharge your FASTag in seconds—no queues, no delays.<br />
                   🛣️ Smooth travel starts with quick, hassle-free top-ups.
                 </p>
-                <a href="#" className="btn btn-primary" onClick={(e) => goFastTag(navigate, e)}>
+                <a href="javascript:void(0)" className="btn btn-primary" onClick={(e) => goFastTag(navigate, e)}>
                   Continue
                 </a>
               </div>
@@ -97,7 +97,7 @@ function HomePage() {
                   💡 Pay your electricity bills anytime, anywhere.<br />
                   ⚡ Instant confirmations and support for all electricity boards.
                 </p>
-                <a href="#" className="btn btn-primary" onClick={(e) => goElectricityRecharge(navigate, e)}>
+                <a href="javascript:void(0)" className="btn btn-primary" onClick={(e) => goElectricityRecharge(navigate, e)}>
                   Continue
                 </a>
               </div>
@@ -113,7 +113,7 @@ function HomePage() {
                   🔥 Pay your gas bills instantly with secure online payments.<br />
                   📲 Quick, easy, and reliable service for all major gas providers.
                 </p>
-                <a href="#" className="btn btn-primary" onClick={(e) => goGasRecharge(navigate, e)}>
+                <a href="javascript:void(0)" className="btn btn-primary" onClick={(e) => goGasRecharge(navigate, e)}>
                   Continue
                 </a>
               </div>
