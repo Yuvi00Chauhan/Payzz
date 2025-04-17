@@ -31,25 +31,20 @@ function RegistrationPage() {
     }
 
     try {
-      // Create the user in Firebase Auth
-      const userCredential = await createUserWithEmailAndPassword(auth, email, pass);
-      const user = userCredential.user;
-
-      // Store additional user info in Firestore
       await addDoc(collection(db, "users"), {
-        uid: user.uid,
         fname,
         lname,
         dob,
         phone,
         email,
+        password: pass, // 🔐 Avoid storing plain passwords in production!
       });
 
       alert("Registration successful!");
-      navigate("/login");
+      navigate("/Login");
     } catch (error) {
-      console.error("Error during registration:", error.message);
-      alert("Registration failed: " + error.message);
+      console.error("Firestore error:", error);
+      alert(`Registration failed: ${error.message}`);
     }
   };
 
