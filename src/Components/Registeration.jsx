@@ -49,7 +49,7 @@ function RegistrationPage() {
 
   return (
     <div className="form-container">
-      <h2>Register with Payzz</h2>
+      <h2 className="heading">Register with Payzz</h2>
       <form onSubmit={signup}>
         <label>First Name:</label>
         <input type="text" name="fname" required />

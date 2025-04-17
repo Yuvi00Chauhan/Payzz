@@ -17,11 +17,12 @@ import Account from "./Components/Account";
 import FAQ from "./Components/FAQ";
 import Features from "./Components/Features";
 import Contact from "./Components/Contact";
+import RegistrationPage from "./Components/Registeration";
 function App() {
   return (
     <>
       <BrowserRouter>
-      
+     
         <MainContent />
       </BrowserRouter>
     </>
@@ -33,8 +34,9 @@ function MainContent() {
     <div className="App">
       <div className="app-container">
         <Navbar />
+
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/" element={<Navigate to="/register" />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/login" element={<LandingPage />} />
           <Route path="/mobo-recharge" element={<MobileRecharge />} />
@@ -46,7 +48,7 @@ function MainContent() {
           <Route path="/about" element={<About />} />
           <Route path="/account" element={<Account />} />
           <Route path="/faq" element={<FAQ />} />
-        
+          <Route path="/register" element={<RegistrationPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/features" element={<Features />} />
           
