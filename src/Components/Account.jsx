@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 function Account() {
-
+  const navigate = useNavigate();
   const user = {
     name: "Yuvraj Nirwan",
     email: "yuvi@example.com",
@@ -9,6 +11,9 @@ function Account() {
     joined: "March 2024",
   };
 
+  const handleLogout = () => {  
+    navigate("/login");
+  }
   return (
     <div className="d-flex justify-content-center align-items-center vh-100 pt-5">
       <div className="card shadow-sm p-4">
@@ -29,7 +34,7 @@ function Account() {
         </ul>
         <div className="d-flex justify-content-between">
           <button className="btn btn-primary">Edit Profile</button>
-          <button className="btn btn-outline-danger">Logout</button>
+          <button className="btn btn-outline-danger" onClick={handleLogout}>Logout</button>
         </div>
       </div>
     </div>

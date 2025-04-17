@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Registeration.css";
-import { db } from "../firebaseConfig";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth, db } from "../firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
 
 function RegistrationPage() {
@@ -30,20 +31,25 @@ function RegistrationPage() {
     }
 
     try {
+      // Create the user in Firebase Auth
+      const userCredential = await createUserWithEmailAndPassword(auth, email, pass);
+      const user = userCredential.user;
+
+      // Store additional user info in Firestore
       await addDoc(collection(db, "users"), {
+        uid: user.uid,
         fname,
         lname,
         dob,
         phone,
         email,
-        password: pass, // 🔐 Avoid storing plain passwords in production!
       });
 
       alert("Registration successful!");
-      navigate("/Login");
+      navigate("/login");
     } catch (error) {
-      console.error("Firestore error:", error);
-      alert(`Registration failed: ${error.message}`);
+      console.error("Error during registration:", error.message);
+      alert("Registration failed: " + error.message);
     }
   };
 
